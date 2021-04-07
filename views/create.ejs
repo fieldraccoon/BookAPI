@@ -1,0 +1,50 @@
+<%- include("partials/header") -%>
+
+    <center>
+        <h1>Create</h1>
+    </center>
+
+        <form action="/create" method="POST">
+            <div class="row g-3 mx-auto " style="width: 1000px;">
+
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Title</label>
+            <input type="text" class="form-control" id="inputEmail4" name="inputTitle">
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Author</label>
+            <input type="text" class="form-control" id="inputPassword4" name="inputAuthor">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Description</label>
+            <input type="text" class="form-control" name="inputDescription" id="inputAddress">
+        </div>
+
+
+
+        <div class="col-md-6">
+            <div class="input-group">
+                <div class="input-group-text">$</div>
+                <input type="text" class="form-control" name="inputPrice" id="autoSizingInputGroup" placeholder="Price">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <div class="input-group-text">~</div>
+                <input type="text" class="form-control" name="inputPages" id="autoSizingInputGroup" placeholder="Number Of Pages">
+            </div>
+        </div>
+
+
+
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        </div>
+    </form>
+    
+    
+
+
+    <%- include("partials/footer") -%>
